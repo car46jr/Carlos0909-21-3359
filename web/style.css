@@ -3,9 +3,12 @@ h3{
     text-align: center;
     background-color: #F9E79F;
 }
-
+h1{
+    text-align: center;
+}
 body{
     background-color: #F9E79F;
+    margin: 400px;
 }
 
 button{
