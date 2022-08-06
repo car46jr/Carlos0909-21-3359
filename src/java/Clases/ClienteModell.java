@@ -9,24 +9,24 @@ package Clases;
  * @author DELL
  */
 public class ClienteModell {
-    private int codigo;
+    private String phone;
     private String nombre;
     private String apellido;
     private String direccion;
     private String correo;
-    private int pass;
+    private String pass;
     
     
     public ClienteModell(){
    
 }
 
-    public int getCodigo() {
-        return codigo;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getNombre() {
@@ -61,11 +61,11 @@ public class ClienteModell {
         this.correo = correo;
     }
 
-    public int getPass() {
+    public String getPass() {
         return pass;
     }
 
-    public void setPass(int pass) {
+    public void setPass(String pass) {
         this.pass = pass;
     }
 

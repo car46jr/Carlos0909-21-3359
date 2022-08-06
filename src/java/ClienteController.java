@@ -18,7 +18,7 @@ import jakarta.servlet.http.HttpServletResponse;
  */
 @WebServlet(urlPatterns = {"/ClienteController"})
 public class ClienteController extends HttpServlet {
-    ClienteModell clientes;
+    ClienteModell cliente;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,21 +34,35 @@ public class ClienteController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            clientes=ClienteModell;
-            clientes.setNombre(request.getParameter("nombre"));
-            clientes.setApellido(request.getParameter("apellido"));
-            clientes.setDireccion(request.getParameter("direccion"));
-            clientes.setCorreo(request.getParameter("correo"));
-            clientes.setTelefono(request.getParameter("telefono"));
-            clientes.setCodigo(request.getParameter("codigo"));
+            cliente = new ClienteModell();
+            
+            cliente.setNombre(request.getParameter("nombre"));
+            cliente.setApellido(request.getParameter("apellido"));
+            cliente.setDireccion(request.getParameter("direccion"));
+            cliente.setPass(request.getParameter("pass"));
+            cliente.setPhone(request.getParameter("phone"));
+            cliente.setCorreo(request.getParameter("correo"));
+
+
+
 
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ClienteController</title>");            
+            out.println("<title>Registro de Clientes</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ClienteController at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Registro de Clientes de  " + request.getContextPath() + "</h1> <hr>");
+            out.println("<h2>" + cliente.getNombre()+ "</h2>");
+            out.println("<h2>" + cliente.getApellido()+ "</h2>");
+            out.println("<h2>" + cliente.getDireccion()+ "</h2>");
+            out.println("<h2>" + cliente.getCorreo()+"</h2>");
+            out.println("<h2>" + cliente.getPass()+ "</h2>");
+            out.println("<h2"+ cliente.getPhone()+"</h2>");
+            
+          
+
+            
             out.println("</body>");
             out.println("</html>");
         }
