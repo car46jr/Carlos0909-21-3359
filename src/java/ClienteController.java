@@ -59,7 +59,7 @@ public class ClienteController extends HttpServlet {
             out.println("<h2>" + cliente.getCorreo()+"</h2>");
             out.println("<h2>" + cliente.getPass()+ "</h2>");
             out.println("<h2"+ cliente.getPhone()+"</h2>");
-            
+           
           
 
             

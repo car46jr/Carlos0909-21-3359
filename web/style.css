@@ -1,4 +1,16 @@
 
-.form-group {
+h3{
+    text-align: center;
+    background-color: #F9E79F;
+}
 
+body{
+    background-color: #F9E79F;
+}
+
+button{
+    text-align: center;
+}
+a{
+    text-align: center;
 }
