@@ -5,11 +5,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>XD :)</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="js/intento1.js"></script>
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     </head>
@@ -19,7 +21,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <h1>Formulario de Clientes</h1>
         <a href="ClienteController" > Server </a> ---
         <a href="gracias.html" > Emergencia</a><br><hr>
-
+        
+       
         <form action="ClienteController">
             <div class="form-group">
                 <label for="exampleInputName">Nombre</label>
@@ -47,9 +50,48 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     <br>
             <br>
             <button type="submit"  class="btn btn-primary" a href="gracias.html">Guardar</button>
-            <button type="button" class="btn btn-danger">Cancelar</button>
-            
+            <button type="button" class="btn btn-danger">Cancelar</button> <br>  
+            <a href="javascript:enviar_formulario()">Enviar formulario</a--><br>
+
             <a href="gracias.html()"> Volver Atrás</a>
+       
+
+       
+        
+     <form id="contact-form" role="form">
+        <h1>Formulario de Registro</h1>
+        <form action="NewServlet">
+            
+         
+        <br>
+        <input type="text" id="codigo"><br>
+        <input type="text" id="nombre"><br>
+        <input type="text" id="correo" name="correo"><br>
+        <input type="button" value="Copiar texto" onclick="manipularElementosDelDom()">
+        
+             
+        <input type="button" name="" value="Agregar Elementos en Ejecusion" onclick="crearElementosEnEjecusion();"><br>
+        <input type="button" name="" value="Eliminar Elementos" onclick="eliminarElementosEnEjecusion();"><br>
+        <input type="button" name="" value="Desestructurar Arrays" onclick="desestructurarArrays();"><br>
+        <input type="button" name="" value="Try Catch" onclick="manejoDeExcepciones();"><br>
+        
+     <form id="contact-form" role="form">
+          
+
+          <div class="form-group has-feedback">
+            <input type="button" value="Enviar Opcion 1" onclick="enviarFormulario()" class="submit-button btn btn-default">
+            <input type="button" value="Enviar Opcion 2" onclick="enviarFormularioOpcion2()" class="submit-button btn btn-default">
+          </div>
+    </form>
+        <div id='principal'></div>
+      </div>
+
+         
+    </form>
+        
+        <div id='principal'></div>
+      </div>
+
 
     </form>
                           <br>
